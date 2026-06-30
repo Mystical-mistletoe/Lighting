@@ -7,5 +7,13 @@ namespace Lighting.Models
         public string Value { get; set; } = string.Empty;
         public Characteristic Characteristic { get; set; } = null!;
         public ICollection<ProductCharacteristic> ProductCharacteristics { get; set; } = new List<ProductCharacteristic>();
+
+        public Characteristic Characteristic1
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

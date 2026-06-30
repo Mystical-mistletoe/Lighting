@@ -1,2 +1,99 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Lighting.Models.Account">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAEAAAAAAAAAAAAAACAAAQAAAAAAA=</HashCode>
+      <FileName>Models\Account.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lighting.Models.Category">
+    <Position X="4.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lighting.Models.Characteristic">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAIAAAAAQAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Models\Characteristic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lighting.Models.CharacteristicValue">
+    <Position X="1.5" Y="3.25" Width="1.5" />
+    <AssociationLine Name="Characteristic1" Type="Lighting.Models.Characteristic">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.543" Y="1.331" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgACAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAgAAAAIAA=</HashCode>
+      <FileName>Models\CharacteristicValue.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Characteristic1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lighting.Models.Manufacturer">
+    <Position X="5.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAgAAAAAAAAAQAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\Manufacturer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lighting.Models.Product">
+    <Position X="1.5" Y="5.25" Width="1.5" />
+    <AssociationLine Name="ProductCharacteristic" Type="Lighting.Models.ProductCharacteristic" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3" Y="5.938" />
+        <Point X="4.632" Y="5.938" />
+        <Point X="4.632" Y="4.25" />
+        <Point X="5.25" Y="4.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.359" Y="-1.605" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAgCQAAAAQAgCgAAACAAAJQAEAEAAAAAAAAAEAAAKAA=</HashCode>
+      <FileName>Models\Product.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Category1" />
+      <Property Name="Manufacturer1" />
+      <Property Name="ProductCharacteristic" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lighting.Models.ProductCharacteristic">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <AssociationLine Name="Characteristic1" Type="Lighting.Models.Characteristic" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="3.438" />
+        <Point X="4.972" Y="3.43" />
+        <Point X="4.406" Y="3.43" />
+        <Point X="4.406" Y="2.623" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.647" Y="0.518" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EgACAAAAAAAAAAAACAAAAQAAAAAAIAAAAAABAAAAAAA=</HashCode>
+      <FileName>Models\ProductCharacteristic.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Characteristic1" />
+      <Property Name="CharacteristicValue1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lighting.Models.User">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAACAAAIAAECAAAAAAAAAAAgAAAAAQIAAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

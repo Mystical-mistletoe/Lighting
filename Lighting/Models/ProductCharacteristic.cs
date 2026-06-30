@@ -10,5 +10,21 @@
         public Product Product { get; set; } = null!;
         public Characteristic Characteristic { get; set; } = null!;
         public CharacteristicValue CharacteristicValue { get; set; } = null!;
+
+        public Characteristic Characteristic1
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public CharacteristicValue CharacteristicValue1
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

@@ -17,5 +17,29 @@
         public Category Category { get; set; } = null!;
         public Manufacturer Manufacturer { get; set; } = null!;
         public ICollection<ProductCharacteristic> ProductCharacteristics { get; set; } = new List<ProductCharacteristic>();
+
+        public Category Category1
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Manufacturer Manufacturer1
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public ProductCharacteristic ProductCharacteristic
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }
